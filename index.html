@@ -192,7 +192,7 @@ const noBtn = document.getElementById('noBtn');
 
 function goToStep(stepNum) {
 document.querySelectorAll('.card').forEach(card => card.classList.add('hidden'));
-document.getElementById(step${stepNum}`).classList.remove('hidden');
+document.getElementById(`step${stepNum}`).classList.remove('hidden');
 
 if(stepNum === 4) {
 
