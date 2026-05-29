@@ -1,0 +1,654 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=utf-8" ><meta name=ProgId  content=Word.Document ><meta name=Generator  content="Microsoft Word 14" ><meta name=Originator  content="Microsoft Word 14" ><link rel=File-List  href="index.files/filelist.xml" ><title></title><!--[if gte mso 9]><xml><o:DocumentProperties><o:Author>Apache POI</o:Author><o:LastAuthor>Siphesihle Victor Mapulanka</o:LastAuthor><o:Revision>1</o:Revision><o:Pages>25</o:Pages><o:Characters>5040</o:Characters><o:Lines>1</o:Lines><o:Paragraphs>1</o:Paragraphs></o:DocumentProperties><o:CustomDocumentProperties><o:KSOProductBuildVer dt:dt="string" >1033-12.1.0.26372</o:KSOProductBuildVer><o:ICV dt:dt="string" >FF0D75EBAA6D4206A0DD94E90F64A089_13</o:ICV></o:CustomDocumentProperties></xml><![endif]--><!--[if gte mso 9]><xml><o:OfficeDocumentSettings></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:PunctuationKerning></w:PunctuationKerning><w:View>Web</w:View><w:Compatibility><w:DontGrowAutofit/><w:DoNotExpandShiftReturn/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Normal" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footer" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of figures" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope return" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="line number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="page number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of authorities" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="macro" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toa heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Closing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  QFormat="true"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Message Header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Salutation" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Date" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Note Heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Block Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Hyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="FollowedHyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Document Map" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Plain Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="E-mail Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal (Web)" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Acronym" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Cite" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Code" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Definition" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Keyboard" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Preformatted" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Sample" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Typewriter" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Variable" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation subject" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / a / i" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / 1.1 / 1.1.1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Article / Section" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Contemporary" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Elegant" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Professional" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Balloon Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Theme" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Placeholder Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No Spacing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Paragraph" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Intense Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 6" ></w:LsdException>
+</w:LatentStyles></xml><![endif]--><style>
+@font-face{
+font-family:"Times New Roman";
+}
+
+@font-face{
+font-family:"宋体";
+}
+
+@font-face{
+font-family:"Calibri";
+}
+
+@font-face{
+font-family:"SimSun";
+}
+
+@font-face{
+font-family:"Wingdings";
+}
+
+@font-face{
+font-family:"Arial";
+}
+
+p.MsoNormal{
+mso-style-name:Normal;
+mso-style-parent:"";
+margin:0pt;
+margin-bottom:.0001pt;
+font-family:Calibri;
+font-size:10,5000pt;
+}
+
+span.10{
+font-family:Calibri;
+}
+
+span.msoIns{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:underline;
+text-underline:single;
+color:blue;
+}
+
+span.msoDel{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:line-through;
+color:red;
+}
+
+table.MsoNormalTable{
+mso-style-name:"Table Normal";
+mso-style-parent:"";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0,0000pt 5,4000pt 0,0000pt 5,4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10,0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+size:595,0000pt 842,0000pt;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:25pt;" ><!--StartFragment--><div class="Section0" ><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:30,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:30,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:30,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:30,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;!DOCTYPE html&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;html lang="en"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;head&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;meta charset="UTF-8"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;title&gt;Welcome to a date with sphe&#10084;&#65039;&lt;/title&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;style&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >:root {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >--primary-pink: #d63384;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >--light-pink: #ffe6e6;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >--btn-green: #4cd137;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >--btn-red: #e84118;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >--btn-blue: #3498db;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >body {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >display: flex;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >flex-direction: column;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >align-items: center;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >justify-content: center;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >height: 100vh;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >background-color: var(--light-pink);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >margin: 0;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >overflow: hidden;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >text-align: center;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >h1, h2 {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >color: var(--primary-pink);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >margin-bottom: 25px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >padding: 0 15px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >.card {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >background: white;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >padding: 40px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >border-radius: 20px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >box-shadow: 0 10px 25px rgba(214, 51, 132, 0.1);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >max-width: 450px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >width: 90%;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >min-height: 200px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >display: flex;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >flex-direction: column;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >align-items: center;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >justify-content: center;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >position: relative;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >z-index: 10;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >.hidden { display: none !important; }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >button {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >font-size: 1.1rem;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >padding: 12px 28px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >border: none;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >border-radius: 25px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >cursor: pointer;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >font-weight: bold;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >transition: transform 0.1s ease;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >.btn-container {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >display: flex;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >gap: 20px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >justify-content: center;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >align-items: center;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >width: 100%;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >height: 60px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >position: relative;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >.continue-btn {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >background-color: var(--btn-blue);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >color: white;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >#yesBtn, .next-btn {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >background-color: var(--btn-green);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >color: white;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >button:hover { transform: scale(1.05); }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >#noBtn {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >background-color: var(--btn-red);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >color: white;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >position: relative;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >z-index: 15;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >input[type="date"], input[type="time"] {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >font-size: 1.2rem;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >padding: 10px 15px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >border: 2px solid var(--primary-pink);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >border-radius: 10px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >color: #333;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >outline: none;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >margin-bottom: 20px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >width: 80%;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >.celebration-text {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >font-size: 2.5rem;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >color: var(--primary-pink);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >margin-bottom: 15px;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >animation: popIn 0.5s ease-out;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >.cute-msg {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >font-size: 1.3rem;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >color: #555;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >animation: fadeIn 1s ease-in forwards;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >.element {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >position: absolute;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >bottom: -10%;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >font-size: 2rem;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >user-select: none;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >pointer-events: none;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >animation: floatUp 4s linear infinite;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >@keyframes floatUp {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >0% { transform: translateY(0) rotate(0deg); opacity: 1; }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >@keyframes popIn {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >0% { transform: scale(0.5); opacity: 0; }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >100% { transform: scale(1); opacity: 1; }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >@keyframes fadeIn {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >0% { opacity: 0; }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >100% { opacity: 1; }</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/style&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/head&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;body&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div id="step0" class="card"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;h1&gt;Welcome to a date with sphe&#10084;&#65039;&lt;/h1&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;button class="continue-btn" onclick="goToStep(1)"&gt;Continue&lt;/button&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div id="step1" class="card hidden"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;h1&gt;Will you go on a date with me?&lt;/h1&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div class="btn-container"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;button id="yesBtn" onclick="goToStep(2)"&gt;Yes&lt;/button&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;button id="noBtn" onmouseover="moveNoButton()" onclick="moveNoButton()"&gt;No&lt;/button&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div id="step2" class="card hidden"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;h2&gt;Pick a date! &#55357;&#56517;&lt;/h2&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;input type="date" id="datePicker"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;button class="next-btn" onclick="processDate()"&gt;Next&lt;/button&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div id="step3" class="card hidden"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;h2&gt;What time works? &#9200;&lt;/h2&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;input type="time" id="timePicker"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;button class="next-btn" onclick="processTime()"&gt;Confirm&lt;/button&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div id="step4" class="card hidden"&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div class="celebration-text"&gt;It's a Date! &#55356;&#57225;&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;div class="cute-msg" id="finalMessage"&gt;&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/div&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;script&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >let chosenDate = "";</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >let chosenTime = "";</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const noBtn = document.getElementById('noBtn');</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >function goToStep(stepNum) {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >document.querySelectorAll('.card').forEach(card =&gt; card.classList.add('hidden'));</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >document.getElementById(step${stepNum}`).classList.remove('hidden');</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >if(stepNum === 4) {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >startFloatingEffects();</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >function moveNoButton() {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const padding = 40;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const maxX = window.innerWidth - noBtn.offsetWidth - padding;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const maxY = window.innerHeight - noBtn.offsetHeight - padding;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const randomX = Math.max(padding, Math.floor(Math.random() * maxX));</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const randomY = Math.max(padding, Math.floor(Math.random() * maxY));</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >noBtn.style.position = 'fixed';</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >noBtn.style.left = randomX + 'px';</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >noBtn.style.top = randomY + 'px';</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >function processDate() {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const dateInput = document.getElementById('datePicker').value;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >if (!dateInput) {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >alert("Please select a date first! &#55357;&#56469;");</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >return;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const selectedDate = new Date(dateInput);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const today = new Date();</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >today.setHours(0, 0, 0, 0);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >selectedDate.setHours(0, 0, 0, 0);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >if (selectedDate &lt; today) {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >alert("Invalid date! Please select an upcoming date. &#55357;&#56469;");</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >return;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const options = { weekday: 'long', month: 'long', day: 'numeric' };</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >chosenDate = new Date(dateInput).toLocaleDateString(undefined, options);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >goToStep(3);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >function processTime() {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const timeInput = document.getElementById('timePicker').value;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >if (!timeInput) {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >alert("Please pick a time! &#55357;&#56469;");</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >return;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const [hours, minutes] = timeInput.split(':');</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const ampm = hours &gt;= 12 ? 'PM' : 'AM';</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const formattedHours = hours % 12 || 12;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >chosenTime = ``${formattedHours}:</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><img width="143"  height="35"  src="index.files/index4953.png" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >{ampm}`;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >document.getElementById('finalMessage').innerHTML = Can't wait to see you on &lt;br&gt;&lt;strong&gt;${chosenDate}&lt;/strong&gt; at &lt;strong&gt;${chosenTime}&lt;/strong&gt;! &lt;br&gt;&lt;br&gt;&#10084;&#65039; &#10024; &#55357;&#56842;;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >goToStep(4);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >function startFloatingEffects() {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const items = ['&#55356;&#57224;', '&#10084;&#65039;', '&#55357;&#56470;', '&#55356;&#57224;', '&#10024;'];</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >setInterval(() =&gt; {</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const element = document.createElement('div');</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >element.classList.add('element');</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >element.innerText = items[Math.floor(Math.random() * items.length)];</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >element.style.left = Math.random() * 100 + 'vw';</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >element.style.fontSize = Math.random() * (2.5 - </span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;page-break-before:always;" ><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >1.2) + 1.2 + 'rem';</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >const duration = Math.random() * (5 - 3) + 3;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >element.style.animationDuration = duration + 's';</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;line-height:112%;" ><span style="mso-spacerun:'yes';font-family:Arial;line-height:112%;
+font-size:27,0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >document.body.appendChild(element);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >setTimeout(() =&gt; { element.remove(); }, duration * 1000);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}, 200);</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >}</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/script&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/body&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:0,0000pt;margin-right:0,0000pt;margin-bottom:0,0000pt;
+margin-left:0,0000pt;" ><span style="mso-spacerun:'yes';font-family:Arial;font-size:27,0000pt;" >&lt;/html&gt;</span><span style="mso-spacerun:'yes';font-family:Calibri;font-size:10,5000pt;" ><o:p></o:p></span></p></div><!--EndFragment--></body></html>
