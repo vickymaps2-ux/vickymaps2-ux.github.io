@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to a date with sphe❤️</title>
+<style>
+:root {
+--primary-pink: #d63384;
+--light-pink: #ffe6e6;
+--btn-green: #4cd137;
+--btn-red: #e84118;
+--btn-blue: #3498db;
+}
+
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--light-pink);
+margin: 0;
+overflow: hidden;
+text-align: center;
+}
+
+h1, h2 {
+color: var(--primary-pink);
+margin-bottom: 25px;
+padding: 0 15px;
+}
+
+
+.card {
+background: white;
+padding: 40px;
+border-radius: 20px;
+box-shadow: 0 10px 25px rgba(214, 51, 132, 0.1);
+max-width: 450px;
+width: 90%;
+min-height: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+z-index: 10;
+}
+
+.hidden { display: none !important; }
+
+button {
+
+font-size: 1.1rem;
+padding: 12px 28px;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+font-weight: bold;
+transition: transform 0.1s ease;
+}
+
+.btn-container {
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 60px;
+position: relative;
+}
+
+.continue-btn {
+
+background-color: var(--btn-blue);
+color: white;
+}
+
+#yesBtn, .next-btn {
+background-color: var(--btn-green);
+color: white;
+}
+
+button:hover { transform: scale(1.05); }
+
+#noBtn {
+background-color: var(--btn-red);
+color: white;
+position: relative;
+z-index: 15;
+}
+
+input[type="date"], input[type="time"] {
+font-size: 1.2rem;
+
+padding: 10px 15px;
+border: 2px solid var(--primary-pink);
+border-radius: 10px;
+color: #333;
+outline: none;
+margin-bottom: 20px;
+width: 80%;
+}
+
+.celebration-text {
+font-size: 2.5rem;
+color: var(--primary-pink);
+margin-bottom: 15px;
+animation: popIn 0.5s ease-out;
+}
+
+.cute-msg {
+font-size: 1.3rem;
+color: #555;
+animation: fadeIn 1s ease-in forwards;
+
+}
+
+.element {
+position: absolute;
+bottom: -10%;
+font-size: 2rem;
+user-select: none;
+pointer-events: none;
+animation: floatUp 4s linear infinite;
+}
+
+@keyframes floatUp {
+0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes popIn {
+0% { transform: scale(0.5); opacity: 0; }
+
+100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+</style>
+</head>
+<body>
+
+<div id="step0" class="card">
+<h1>Welcome to a date with sphe❤️</h1>
+<button class="continue-btn" onclick="goToStep(1)">Continue</button>
+</div>
+
+<div id="step1" class="card hidden">
+<h1>Will you go on a date with me?</h1>
+<div class="btn-container">
+
+<button id="yesBtn" onclick="goToStep(2)">Yes</button>
+<button id="noBtn" onmouseover="moveNoButton()" onclick="moveNoButton()">No</button>
+</div>
+</div>
+
+<div id="step2" class="card hidden">
+<h2>Pick a date! 📅</h2>
+<input type="date" id="datePicker">
+<button class="next-btn" onclick="processDate()">Next</button>
+</div>
+
+<div id="step3" class="card hidden">
+<h2>What time works? ⏰</h2>
+<input type="time" id="timePicker">
+<button class="next-btn" onclick="processTime()">Confirm</button>
+
+</div>
+
+<div id="step4" class="card hidden">
+<div class="celebration-text">It's a Date! 🎉</div>
+<div class="cute-msg" id="finalMessage"></div>
+</div>
+
+<script>
+let chosenDate = "";
+let chosenTime = "";
+const noBtn = document.getElementById('noBtn');
+
+function goToStep(stepNum) {
+document.querySelectorAll('.card').forEach(card => card.classList.add('hidden'));
+document.getElementById(step${stepNum}`).classList.remove('hidden');
+
+if(stepNum === 4) {
+
+startFloatingEffects();
+}
+}
+
+function moveNoButton() {
+const padding = 40;
+const maxX = window.innerWidth - noBtn.offsetWidth - padding;
+const maxY = window.innerHeight - noBtn.offsetHeight - padding;
+
+const randomX = Math.max(padding, Math.floor(Math.random() * maxX));
+const randomY = Math.max(padding, Math.floor(Math.random() * maxY));
+
+noBtn.style.position = 'fixed';
+noBtn.style.left = randomX + 'px';
+noBtn.style.top = randomY + 'px';
+}
+
+
+function processDate() {
+const dateInput = document.getElementById('datePicker').value;
+if (!dateInput) {
+alert("Please select a date first! 💕");
+return;
+}
+
+const selectedDate = new Date(dateInput);
+const today = new Date();
+
+today.setHours(0, 0, 0, 0);
+selectedDate.setHours(0, 0, 0, 0);
+
+if (selectedDate < today) {
+alert("Invalid date! Please select an upcoming date. 💕");
+return;
+}
+
+
+const options = { weekday: 'long', month: 'long', day: 'numeric' };
+chosenDate = new Date(dateInput).toLocaleDateString(undefined, options);
+goToStep(3);
+}
+
+function processTime() {
+const timeInput = document.getElementById('timePicker').value;
+if (!timeInput) {
+alert("Please pick a time! 💕");
+return;
+}
+
+const [hours, minutes] = timeInput.split(':');
+const ampm = hours >= 12 ? 'PM' : 'AM';
+const formattedHours = hours % 12 || 12;
+
+chosenTime = ``${formattedHours}:
+
+{ampm}`;
+
+document.getElementById('finalMessage').innerHTML = Can't wait to see you on &lt;br&gt;&lt;strong&gt;${chosenDate}</strong> at <strong>${chosenTime}&lt;/strong&gt;! &lt;br&gt;&lt;br&gt;❤️ ✨ 😊;
+goToStep(4);
+}
+
+function startFloatingEffects() {
+const items = ['🎈', '❤️', '💖', '🎈', '✨'];
+setInterval(() => {
+const element = document.createElement('div');
+element.classList.add('element');
+element.innerText = items[Math.floor(Math.random() * items.length)];
+element.style.left = Math.random() * 100 + 'vw';
+element.style.fontSize = Math.random() * (2.5 - 
+
+1.2) + 1.2 + 'rem';
+
+const duration = Math.random() * (5 - 3) + 3;
+element.style.animationDuration = duration + 's';
+
+document.body.appendChild(element);
+setTimeout(() => { element.remove(); }, duration * 1000);
+}, 200);
+}
+</script>
+</body>
+</html>
